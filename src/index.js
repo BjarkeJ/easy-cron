@@ -1,9 +1,11 @@
+var translator = require('./translator');
+
 module.exports = {
 
   cronPattern: function (string) {
     'use strict';
 
-    var pattern = string;
+    var pattern = translator(string);
     return pattern;
 
   }
