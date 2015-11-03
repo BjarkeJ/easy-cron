@@ -4,7 +4,7 @@
   "description": "Describe your cron rules with human language. Eg. 'Run every 3 hours during weekends'",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "cron",
@@ -15,7 +15,10 @@
     "schedule",
     "tasks"
   ],
-  "repository" : "https://github.com/BjarkeJ/easy-cron",
+  "repository": "https://github.com/BjarkeJ/easy-cron",
   "author": "BjarkeJ",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.4.0"
+  }
 }
