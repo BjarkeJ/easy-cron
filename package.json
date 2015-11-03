@@ -4,7 +4,7 @@
   "description": "Describe your cron rules with human language. Eg. 'Run every 3 hours during weekends'",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "keywords": [
     "cron",
