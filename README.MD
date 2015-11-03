@@ -1,8 +1,15 @@
+*easy-cron* is a simple node module that helps you set up cron jobs with out remembering what cron patterns such as '*/5 * * * *' means. Instead specify your cron job using human language: "Every five minutes".
+
 # INSTALLATION
 
 Install easy-cron through node package manager:
 
 ```npm install easy-cron```
+
+If you want to save it to your project do:
+
+```npm install --save easy-cron```
+
 
 # USAGE
 
