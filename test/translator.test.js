@@ -21,9 +21,17 @@ describe('translator', function () {
 
   });
 
-  it('should return "* * * * *" when passed "Every 30 seconds"', function () {
-    var string = "Every 30 seconds";
-    var expectedPattern = "*/30 * * * *";
+  it('should return "0 12 * * *" when passed "At 12 pm"', function () {
+    var string = "At 12 pm";
+    var expectedPattern = "0 12 * * *";
+
+    translator(string).should.equal(expectedPattern);
+
+  });
+
+  it('should return "* * * * *" when passed "Every day at 12 pm"', function () {
+    var string = "Every day at 12 pm";
+    var expectedPattern = "0 12 * * *";
 
     translator(string).should.equal(expectedPattern);
 
